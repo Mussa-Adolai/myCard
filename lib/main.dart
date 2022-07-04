@@ -4,7 +4,7 @@ void main() {
   runApp(MyApp());
 }
 
-// ignore: use_key_in_widget_constructors
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -13,48 +13,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisSize: MainAxisSize.max,
-            //verticalDirection: VerticalDirection.up,
-            //mainAxisAlignment: MainAxisAlignment.end,
-            //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-
+          child: Column(
+           
             children: <Widget>[
-              Container(
-                margin: EdgeInsets.fromLTRB(15.0, 20.0, 15.0, 0.0),
-                padding: EdgeInsets.all(10.0),
-                // height: 100.0,
-                // width: 100.0,
-                color: Colors.green,
-                child: Text('container 1'),
-              ),
-              SizedBox(
-                //height: 10.0,
-                width: 15.0,
-              ),
-              Container(
-                margin: EdgeInsets.fromLTRB(15.0, 20.0, 15.0, 0.0),
-                padding: EdgeInsets.all(10.0),
-                // height: 100.0,
-                // width: 100.0,
-                color: Colors.red,
-                child: Text('container 2'),
-              ),
-              SizedBox(
-                //height: 10.0,
-                width: 15.0,
-              ),
-              Container(
-                margin: EdgeInsets.fromLTRB(15.0, 20.0, 15.0, 0.0),
-                padding: EdgeInsets.all(10.0),
-                // height: 100.0,
-                // width: 100.0,
-                color: Colors.blueGrey,
-                child: Text('container 3'),
-              ),
+              CircleAvatar(
+                backgroundColor: Colors.blue,
+                radius: 50.0,
+              )
             ],
           ),
         ),
