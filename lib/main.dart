@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
@@ -39,15 +38,47 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                color: Colors.grey,
-                height: 1.0,
-                width: 400.0,
-                margin: EdgeInsets.symmetric(horizontal: 130.0, vertical: 20.0),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
               ),
-              Container(
-                width: double.infinity,
-              ),
+              Card(
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '+966 566565777',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontSize: 20.0,
+                        fontFamily: 'Source Sans Pro',
+                      ),
+                    ),
+                  )),
+              Card(
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'm.m.adolai@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontSize: 20.0,
+                        fontFamily: 'Source Sans Pro',
+                      ),
+                    ),
+                  )),
             ],
           ),
         ),
